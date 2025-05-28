@@ -1,6 +1,11 @@
+html {
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
+    background: #eeeeee;
+    height: 100%;
 }
 
 
@@ -13,9 +18,15 @@ header {
 
 }
 
+h1 {
+    font-weight: bold;
+
+}
+
 .h1 {
     text-align: center;
     font-size: 3em;
+    font-weight: normal;
     position: absolute;
     top: 25%;
     left: 50%;
@@ -51,8 +62,85 @@ header {
 .nav-link a {
     text-decoration: none;
     color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', arial, sans-serif;
 
 }
 .nav-link a:hover {
     color: #1b1919;
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.prvni-konteiner {
+    height: 45vh;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    margin: 48px 0 12px 0;
+}
+
+.prvni-konteiner img {
+    height: 100%;
+    width: 30%;
+}
+
+.prvni-konteiner p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #1b1919;
+    margin: 0;
+}
+
+.prvni-p {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    transform: translate(-50%, 0%);
+    width: 70%;
+
+}
+
+.druhy-konteiner {
+    height: 45vh;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    margin: 48px 0 12px 0;
+
+}
+
+.druhy-konteiner img {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 0;
+}
+
+.druhy-konteiner p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #1b1919;
+    margin: 0;
+}
+
+.druhe-p {
+    position: absolute;
+    top: 0;
+    right: 35%;
+    width: 65%;
+    height: 100%;
+}
+
+
+
