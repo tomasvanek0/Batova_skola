@@ -1,13 +1,12 @@
+
 * {
     scroll-behavior: smooth;
 }
-
 
 body {
     margin: 0;
     padding: 0;
 }
-
 
 header {
     background-color: #a33333;
@@ -15,11 +14,11 @@ header {
     width: 100%;
     display: flex;
     position: relative;
-
 }
-main {
-    font-family: 'Roboto';font-size: 22px;
 
+main {
+    font-family: 'Roboto';
+    font-size: 22px;
 }
 
 .h1 {
@@ -32,7 +31,6 @@ main {
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-wrap: nowrap;
-
 }
 
 .navbar {
@@ -42,8 +40,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    font-family: 'Roboto';font-size: 22px;
-
+    font-family: 'Roboto';
+    font-size: 22px;
 }
 
 .nav-links {
@@ -56,15 +54,14 @@ main {
     padding: 0;
     width: 100%;
     height: 100%;
-
 }
 
 .nav-link a {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
-
 }
+
 .nav-link a:hover {
     color: #1b1919;
 }
@@ -74,16 +71,17 @@ main {
     width: 100%;
     height: 80vh;
 }
+
 .prvni-foto {
     position: absolute;
     width: 100%;
     left: 50%;
     transform: translate(-50%, 0);
-
 }
+
 .prvni-foto img {
     width: 100%;
-    filter:blur(5px);
+    filter: blur(5px);
 }
 
 .prvni-text {
@@ -92,8 +90,8 @@ main {
     left: 40%;
     transform: translate(-50%, -50%);
     color: white;
-
 }
+
 .prvni-text p {
     margin: 40px 0 60px 0;
 }
@@ -113,36 +111,71 @@ main {
     color: white;
     font-size: 1em;
 }
+
 .tlacitko:hover {
     background-color: #1b1919;
     cursor: pointer;
 }
 
-
-.druhy-konteiner {
-    position: relative;
+.druha-sekce {
     width: 100%;
-    height: 80vh;
+    padding: 40px 0;
 }
 
 .prvni-h3 {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    text-wrap: nowrap;
-    transform: translate(-50%, -50%);
-
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 h3 {
     font-size: 2em;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #111111;
 }
 
-.prvni-text-skoly {
-
+.prvni-text-skola {
+    display: flex;
+    width: 80%;
+    margin: 60px auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
+.prvni-text-skola img {
+    width: 40%;
+    max-width: 400px;
+}
+
+.text-blok {
+    width: 60%;
+}
+
+.prvni-text-skola.obracene {
+    flex-direction: row-reverse;
+}
+
+.footer {
+    background-color: #a33333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .prvni-text-skola,
+    .prvni-text-skola.obracene {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .prvni-text-skola img,
+    .text-blok {
+        width: 90%;
+    }
+}
