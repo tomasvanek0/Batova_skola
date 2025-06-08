@@ -166,6 +166,40 @@ h3 {
 .footer p {
     margin: 0;
 }
+.hero-podstranka {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.hero-podstranka img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.obsah-podstranka {
+    width: 80%;
+    margin: 60px auto;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.obsah-podstranka h2 {
+    margin-top: 40px;
+    color: #a33333;
+}
 
 @media (max-width: 768px) {
     .prvni-text-skola,
