@@ -129,7 +129,7 @@ main {
 
 h3 {
     font-size: 2em;
-    color: #111111;
+    color: #a33333;
 }
 
 .prvni-text-skola {
@@ -199,6 +199,59 @@ h3 {
 .obsah-podstranka h2 {
     margin-top: 40px;
     color: #a33333;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.carousel-track-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    list-style: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(163, 51, 51, 0.8);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button--left {
+    left: 10px;
+}
+
+.carousel-button--right {
+    right: 10px;
 }
 
 @media (max-width: 768px) {
