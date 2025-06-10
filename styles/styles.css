@@ -7,6 +7,11 @@ body {
     margin: 0;
     padding: 0;
 }
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+
+}
 
 header {
     background-color: #a33333;
@@ -190,10 +195,8 @@ h3 {
 }
 
 .obsah-podstranka {
-    width: 80%;
+    width: 75%;
     margin: 60px auto;
-    font-size: 1.1em;
-    line-height: 1.6em;
 }
 
 .obsah-podstranka h2 {
@@ -254,15 +257,47 @@ h3 {
     right: 10px;
 }
 
-@media (max-width: 768px) {
-    .prvni-text-skola,
-    .prvni-text-skola.obracene {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .prvni-text-skola img,
-    .text-blok {
-        width: 90%;
-    }
+.bata-vrch {
+    width: 75%;
+    position: relative;
 }
+
+.bata-vrch h2 {
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+.bata-vrch p {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+.bata-prostred {
+    width: 75%;
+    position: relative;
+}
+
+.bata-prostred p {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.bata-spodek-obrazky {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bata-posled {
+    width: 50%;
+    position: relative;
+}
+
+.bata-posled img {
+    position: absolute;
+    top: 10%;
+    left: 105%;
+}
+

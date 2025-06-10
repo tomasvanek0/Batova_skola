@@ -26,52 +26,52 @@
     </div>
 </header>
 <main>
-    <div class="carousel">
-        <div class="carousel-track-container">
-            <ul class="carousel-track">
-                <li class="carousel-slide current-slide">
-                    <img src="../images/prvni.jpg" alt="Foto 1">
-                </li>
-                <li class="carousel-slide">
-                    <img src="../images/druhy.jpg" alt="Foto 2">
-                </li>
-                <li class="carousel-slide">
-                    <img src="../images/header.jpg" alt="Foto 3">
-                </li>
-            </ul>
-        </div>
+    <section class="obsah-podstranka">
+        <h2>Galerie z minulosti</h2>
+        <div class="carousel">
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="../images/prvni.jpg" alt="Foto 1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="../images/druhy.jpg" alt="Foto 2">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="../images/header.jpg" alt="Foto 3">
+                    </li>
+                </ul>
+            </div>
 
-        <button class="carousel-button carousel-button--left">&#10094;</button>
-        <button class="carousel-button carousel-button--right">&#10095;</button>
-    </div>
+            <button class="carousel-button carousel-button--left">&#10094;</button>
+            <button class="carousel-button carousel-button--right">&#10095;</button>
+        </div>
+    </section>
+    <section class="obsah-podstranka">
+        <h2>Galerie ze současnosti</h2>
+        <div class="carousel">
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="../images/prvni.jpg" alt="Foto 1">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="../images/druhy.jpg" alt="Foto 2">
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="../images/header.jpg" alt="Foto 3">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel-button carousel-button--left">&#10094;</button>
+            <button class="carousel-button carousel-button--right">&#10095;</button>
+        </div>
+    </section>
 </main>
 <footer class="footer">
     <p>&copy; 2025 Střední průmyslová škola polytechnicka - Centrum odborné přípravy Zlín. Všechna práva vyhrazena.</p>
 </footer>
-<script>
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const nextButton = document.querySelector('.carousel-button--right');
-    const prevButton = document.querySelector('.carousel-button--left');
-
-    let currentIndex = 0;
-
-    function updateSlidePosition() {
-        const slideWidth = slides[0].getBoundingClientRect().width;
-        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    }
-
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSlidePosition();
-    });
-
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateSlidePosition();
-    });
-
-    window.addEventListener('resize', updateSlidePosition);
-</script>
+<script src="../scripts/carousel.js"></script>
 </body>
 </html>
